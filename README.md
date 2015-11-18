@@ -1,5 +1,12 @@
 Darkblue Barebones Wordpress Template
 =====================================
-Intalling the template:
-npm install
+Installing
+----------
+run 'npm install' to install dependancies
+
+Gulp Stuff
+----------
+run 'gulp' to watch and process CSS, JS and minify images
+
+
 
