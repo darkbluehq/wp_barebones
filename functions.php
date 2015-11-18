@@ -8,7 +8,7 @@ function js_and_css() {
   
   wp_enqueue_script('fastclick', '//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js',false,false,true);
   wp_enqueue_script('modern', '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js',false,false,true);
-  wp_enqueue_script('main', get_stylesheet_directory_uri() . '/assets/js/main.js', false,false,true);
+  wp_enqueue_script('main', get_stylesheet_directory_uri() . '/assets/js/main.min.js', false,false,true);
   
   wp_register_style( 'style' , get_stylesheet_uri() );
 	wp_enqueue_style( 'style' );

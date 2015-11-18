@@ -3,6 +3,7 @@
 var
   gulp = require('gulp'),
   uglify = require('gulp-uglify'),
+  minifyCss = require('gulp-minify-css'),
   postcss = require('gulp-postcss'),
   watch = require('gulp-watch'),
   concat = require('gulp-concat'),
@@ -30,16 +31,19 @@ gulp.task('img', function () {
 
 gulp.task('css', function() {
   return gulp.src('assets/css/style.css')
+    .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(postcss(processors))
+    .pipe(minifyCss())
+    .pipe(sourcemaps.write('assets/css/'))
     .pipe(gulp.dest('.'));
 });
 
 gulp.task('javascript', function() {
   gulp.src(['./assets/js/main.js'])
-    .pipe(sourcemaps.init())
+    .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(concat({ path: 'main.min.js', stat: { mode: '0666' }}))
-    .pipe(sourcemaps.write())
     .pipe(uglify())
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./assets/js/'));
 });
 
