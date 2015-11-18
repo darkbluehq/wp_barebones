@@ -1,5 +1,6 @@
 .DS_Store
 **/.DS_Store
-style.css
 node_modules/**/*
 npm-debug.log
+assets/js/main.min.*
+assets/css/style.css.map

@@ -1,0 +1,20 @@
+/*!
+Theme Name: Dark Blue Barebones
+Theme URI: wearedarkblue.com
+Description: Dark Blue Template Theme Bare Bones
+Version: 0.1
+Author: Dark Blue <stu@wearedarkblue.com>
+Author URI: www.wearedarkblue.com
+*/
+@import "vars.css";
+@import "base/normalise.css";
+@import "base/reset.css";
+@import "base/grid.css";
+@import "base/typography.css";
+@import "base/links-and-buttons.css";
+@import "layouts/header.css";
+@import "layouts/main.css";
+@import "layouts/footer.css";
+@import "layouts/nav.css";
+
+
