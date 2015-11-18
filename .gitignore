@@ -3,6 +3,3 @@
 style.css
 node_modules/**/*
 npm-debug.log
-assets/css/style.css.map
-assets/js/main.min.js.map
-assets/js/main.min.js
