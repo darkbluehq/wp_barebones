@@ -5,6 +5,3 @@ jQuery(function() {
 jQuery(document).ready(function() {
   console.log('Win awards.');
 });
-
-
-
